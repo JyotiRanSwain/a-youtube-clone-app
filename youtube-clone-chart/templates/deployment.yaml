@@ -21,7 +21,7 @@ spec:
     spec:
       terminationGracePeriodSeconds: {{ .Values.terminationGracePeriodSeconds }}
       containers:
-      - name: {{ .Chart.Name }}
+      - name: {{ .Values.applicationName }}
         image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         ports:
