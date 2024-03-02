@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "youtube-clone-chart.fullname" . }}
+  labels:
+    app: {{ include "youtube-clone-chart.name" . }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+  - port: {{ .Values.service.port }}
+    targetPort: {{ .Values.service.targetPort }}
+  selector:
+    app: {{ include "youtube-clone-chart.name" . }}

@@ -1,0 +1,15 @@
+replicaCount: 2
+
+terminationGracePeriodSeconds: 30
+
+image:
+  repository: 013335838002.dkr.ecr.us-east-2.amazonaws.com/web-app
+  tag: v1.0.19
+  pullPolicy: Always
+
+containerPort: 3000
+
+service:
+  type: LoadBalancer
+  port: 80
+  targetPort: 3000
