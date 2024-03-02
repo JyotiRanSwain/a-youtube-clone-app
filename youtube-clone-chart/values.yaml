@@ -1,5 +1,5 @@
 replicaCount: 2
-
+applicationName: web-app
 terminationGracePeriodSeconds: 30
 
 image:
