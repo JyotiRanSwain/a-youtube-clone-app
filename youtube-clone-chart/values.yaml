@@ -13,3 +13,8 @@ service:
   type: LoadBalancer
   port: 80
   targetPort: 3000
+
+deploymentAnnotations:
+  keel.sh/pollSchedule: "@every 5m"
+  keel.sh/trigger: poll
+  keel.sh/policy: major
