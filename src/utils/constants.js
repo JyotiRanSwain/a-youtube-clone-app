@@ -20,7 +20,7 @@ export const categories = [
   { name: 'Coding', icon: <CodeIcon />, },
   { name: 'ReactJS', icon: <CodeIcon />, },
   { name: 'JagaJS', icon: <CodeIcon />, },
-  { name: 'Music', icon: <MusicNoteIcon /> },
+  { name: 'JyotiMusic', icon: <MusicNoteIcon /> },
   { name: 'Education', icon: <SchoolIcon />, },
   { name: 'Podcast', icon: <GraphicEqIcon />, },
   { name: 'Movie', icon: <OndemandVideoIcon />, },
