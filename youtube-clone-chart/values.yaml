@@ -3,8 +3,8 @@ applicationName: web-app
 terminationGracePeriodSeconds: 30
 
 image:
-  repository: 013335838002.dkr.ecr.us-east-2.amazonaws.com/web-app
-  tag: v1.0.4
+  repository: 013335838002.dkr.ecr.ap-northeast-1.amazonaws.com/web-app
+  tag: v1.0.5
   pullPolicy: Always
 
 containerPort: 3000
